@@ -17,14 +17,13 @@
 body, html {
     height: 100%;
     margin: 0;
-    background-color: black;
+    font-size: 0.9em;
 }
 
 
 .titlesite{
 	position: fixed;
-	color:white;
-	padding-bottom: 30px;
+	padding-bottom: 100px;
 	padding-left: 5%;
   z-index: 1;
 }
@@ -33,7 +32,7 @@ h1{
 
 font-family: MaisonNeueBold;
 text-transform: uppercase;
-font-size: 1.5em;
+font-size: 1.8em;
 letter-spacing: 0.1em;
 padding-top: 30px;
 margin-bottom: -1px;
@@ -42,7 +41,8 @@ margin-bottom: -1px;
 
 h2{
 font-family: LarishAlte-SemiBold;
-font-size: 1em;
+font-size: 0.9em;
+color: grey;
 letter-spacing: 0.08em;
 line-height: 0.5em;
 padding-top: 5px;
@@ -81,7 +81,7 @@ letter-spacing: 0.05em;
 }
 
 
-*/
+
 
 #yonosuke{
   background-image: url("../images/yonosuke.jpg");
@@ -98,45 +98,82 @@ letter-spacing: 0.05em;
   background-image: url("../images/theapartment.jpg");
 }
 
+*/
 
 
-
-
-
+/*
 .film{
-  height: 100%;
+ height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+   position: relative; 
 }
-
-
-.film-text-black {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: black;
-} 
-
-.film-text-white {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-} 
-/* PROPOSITION 1 
-
-.film-text {
-  text-align: left;
-  position: absolute;
-  bottom: 3%;
-  left: 3%;
-  color: white;
-}
-
 */
+
+
+ #movies{
+padding-top: 150px;
+}
+
+.film{
+padding-bottom: 200px;
+
+}
+
+.filmcover{
+  display: block;
+  margin: auto;
+  width: 90%;
+  
+}
+
+
+
+.description{
+
+padding-left: 5%;
+padding-right: 5%;
+padding-top: 50px;
+text-align: left;
+
+
+}
+/*
+.whatsthemovie{
+  margin-right: 3%
+}
+*/
+.nameofthefilm{
+
+ font-family: MaisonNeueBold;
+ font-size: 4em;
+ line-height: 50px;
+ 
+
+}
+
+
+.nameofthedirector{
+   font-family: MaisonNeueBold;
+   font-size: 1em;
+   color: grey;
+   margin-top: -30px; 
+   
+
+}
+
+.moviedescription{
+
+color: grey;
+text-align: bottom;
+font-size: 1em;
+word-break: normal;
+padding-left: 20%;
+max-width: 550px;
+}
+
+
+
+
+
