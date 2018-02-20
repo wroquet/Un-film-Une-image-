@@ -1,0 +1,142 @@
+@font-face {
+    font-family: MaisonNeueBook;
+    src: url(../font/MaisonNeueBook.otf);
+}
+
+@font-face {
+    font-family: MaisonNeueBold;
+    src: url(../font/MaisonNeueBold.otf);
+    
+}
+
+@font-face {
+    font-family: MaisonNeueLight;
+    src: url(../font/MaisonNeueLight.otf);    
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+
+
+.titlesite{
+	position: fixed;
+	color:white;
+	padding-bottom: 30px;
+	padding-left: 5%;
+  z-index: 1;
+}
+
+h1{
+
+font-family: MaisonNeueBold;
+text-transform: uppercase;
+font-size: 1.5em;
+letter-spacing: 0.1em;
+padding-top: 30px;
+margin-bottom: -1px;
+}
+
+
+h2{
+font-family: LarishAlte-SemiBold;
+font-size: 1em;
+letter-spacing: 0.08em;
+line-height: 0.5em;
+padding-top: 5px;
+padding-bottom: 30px;
+
+}
+
+
+h3{
+
+font-family: MaisonNeueBold;
+font-size: 2em;
+letter-spacing: 1px;
+padding-top: 30px;
+margin-bottom: -1px;
+}
+
+
+h4{
+
+font-family: MaisonNeueLight;
+font-size: 1em;
+letter-spacing: 0.05em;
+}
+
+
+
+
+
+/*
+.film { 
+    background-color: red;
+  background-size: cover;
+  color: #fff;
+
+}
+
+
+*/
+
+#yonosuke{
+  background-image: url("../images/yonosuke.jpg");
+}
+
+#thecameraman{
+  background-image: url("../images/thecameraman.jpg");
+}
+#thesquare{
+  background-image: url("../images/thesquare.jpg");
+}
+
+#theapartment{
+  background-image: url("../images/theapartment.jpg");
+}
+
+
+
+
+
+
+.film{
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.film-text-black {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+} 
+
+.film-text-white {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+} 
+/* PROPOSITION 1 
+
+.film-text {
+  text-align: left;
+  position: absolute;
+  bottom: 3%;
+  left: 3%;
+  color: white;
+}
+
+*/
