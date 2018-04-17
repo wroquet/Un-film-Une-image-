@@ -37,7 +37,7 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-<div class="titlesite">
+<div id="header" class="titlesite">
      <h1> Cinérama </h1>
      <!--
      <h2> Tribulations cinématographique </h2>-->
@@ -100,11 +100,14 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
   <script>
+    let headerHeight = $('#header').outerHeight();
     $('.filmcover').click(function(e) {
       e.preventDefault();
       let nextElem = $(e.currentTarget).parent().next();
       if (nextElem.hasClass('film')) {
-        $('html, body').animate({scrollTop: nextElem.offset().top + 'px'}, 600);
+        $('html, body').animate({
+          scrollTop: nextElem.offset().top - headerHeight + 'px'
+        }, 600);
       }
     });
   </script>

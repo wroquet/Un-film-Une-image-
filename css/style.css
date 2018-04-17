@@ -24,9 +24,10 @@ body, html {
 .titlesite{
 	position: fixed; 
   text-align: center;
-	padding-bottom: 100px;
+	padding: 20px 0 80px 0;
   width: 100%;
-  top: 7%;
+  top: 0;
+  background: white;
 /*
 	padding-left: 5%;*/
   z-index: 1;
