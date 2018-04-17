@@ -23,6 +23,10 @@
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
 
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -46,7 +50,7 @@
       <div class="row description">
           <div class="four columns whatsthemovie">
             <p class="nameofthefilm">The Story </br>of Yonosuke</p>
-            <p class="nameofthedirector">2013 — Hûichi Okita</p>
+            <p class="nameofthedirector">1987 — Hûichi Okita</p>
             
           </div>
             
@@ -61,7 +65,7 @@
       <div class="row description">
           <div class="four columns whatsthemovie">
             <p class="nameofthefilm">The Cameraman</p>
-            <p class="nameofthedirector">1928 — Buster Keaton & Edward Sedgwick</p>
+            <p class="nameofthedirector">1987 — Buster Keaton & Edward Sedgwick</p>
             
           </div>
             
@@ -77,7 +81,7 @@
       <div class="row description">
           <div class="four columns whatsthemovie">
             <p class="nameofthefilm">The Square</p>
-            <p class="nameofthedirector">2017 — Ruben Östlund</p>
+            <p class="nameofthedirector">1987 — Ruben Östlund</p>
             
           </div>
             
@@ -92,11 +96,17 @@
 
 </div>
 
-
-
-
-
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <script>
+    $('.filmcover').click(function(e) {
+      e.preventDefault();
+      let nextElem = $(e.currentTarget).parent().next();
+      if (nextElem.hasClass('film')) {
+        $('html, body').animate({scrollTop: nextElem.offset().top + 'px'}, 600);
+      }
+    });
+  </script>
 </body>
 </html>
